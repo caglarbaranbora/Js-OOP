@@ -23,7 +23,7 @@ let redTrain = new Train("red", false);
 redTrain.toggleLights();
 redTrain.lightStatus();
 redTrain.getSelf();
-redTrain.color = redTrain.getPrototype();
+redTrain.getPrototype();
 
 class HighSpeedTrain extends Train {
   constructor(passenger, highSpeedOn, color, lightsOn) {
@@ -46,24 +46,5 @@ class HighSpeedTrain extends Train {
 
 var highSpeed = new HighSpeedTrain(200, false, "green", false);
 
+highSpeed.getSelf();
 highSpeed.getPrototype();
-
-// let redTrain = {
-//   color: "red",
-//   lightOn: true,
-// };
-
-// let greenTrain = Object.create(redTrain);
-
-// console.log("green train: ", greenTrain);
-// console.log("green train: ", greenTrain.color);
-// console.log("green train: ", greenTrain.lightOn);
-
-// let blueTrain = Object.create(redTrain);
-// blueTrain.color = "blue";
-// blueTrain.lightOn = false;
-
-// console.log("blue train: ", blueTrain);
-// console.log("blue train: ", blueTrain.color);
-// console.log("blue train: ", blueTrain.lightOn);
-// console.log("green train: ", greenTrain);
