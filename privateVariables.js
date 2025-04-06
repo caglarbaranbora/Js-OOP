@@ -1,5 +1,5 @@
 class Car {
-  #fuel = 50;
+  #fuel = 50; //# private anlaminda
 
   get fuel() {
     return this.#fuel;
